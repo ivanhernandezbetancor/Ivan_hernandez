@@ -42,8 +42,8 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-size: 1.5rem;
+            font-weight: 800;
             letter-spacing: 2px;
             color: #e94560;
             text-decoration: none;
@@ -52,13 +52,14 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
             color: #f5f7fa;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.1rem;
             position: relative;
             transition: color 0.3s ease;
         }
@@ -70,9 +71,9 @@
         .hero {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             color: #f5f7fa;
-            padding: 100px 2rem;
+            padding: 120px 2rem;
             text-align: center;
-            min-height: 600px;
+            min-height: 650px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -88,25 +89,26 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            letter-spacing: 1px;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            letter-spacing: 2px;
             line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero .subtitle {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin-bottom: 2rem;
             color: #e94560;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             margin-bottom: 2rem;
-            color: rgba(245, 247, 250, 0.9);
-            max-width: 600px;
+            color: rgba(245, 247, 250, 0.95);
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -119,11 +121,11 @@
         }
 
         .btn {
-            padding: 12px 30px;
+            padding: 14px 35px;
             border: none;
             border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 1.05rem;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -160,22 +162,36 @@
         }
 
         section {
-            margin: 80px 0;
+            margin: 100px 0;
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: #1a1a2e;
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
             text-align: center;
             position: relative;
             display: inline-block;
             width: 100%;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, #e94560, transparent);
+            border-radius: 3px;
         }
 
         .about {
             background: white;
-            padding: 60px;
+            padding: 70px;
             border-radius: 15px;
             box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
         }
@@ -183,50 +199,53 @@
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            gap: 50px;
             align-items: center;
             margin-top: 40px;
         }
 
         .about-text h3 {
             color: #0f3460;
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
         }
 
         .about-text p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
             color: #555;
-            line-height: 1.8;
+            line-height: 1.9;
+            font-size: 1.05rem;
         }
 
         .skills-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1.2rem;
             margin-top: 2rem;
         }
 
         .skill-tag {
             background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
             color: white;
-            padding: 12px 20px;
+            padding: 15px 25px;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             text-align: center;
             box-shadow: 0 3px 10px rgba(10, 20, 50, 0.2);
+            font-size: 1.05rem;
         }
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
             margin-top: 40px;
         }
 
         .project-card {
             background: white;
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
@@ -235,22 +254,23 @@
         }
 
         .project-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-10px);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
         }
 
         .project-header {
             background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
             color: white;
-            padding: 30px;
+            padding: 35px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 800;
         }
 
         .project-content {
-            padding: 25px;
+            padding: 30px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -259,37 +279,41 @@
         .project-content h3 {
             color: #1a1a2e;
             margin-bottom: 1rem;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            font-weight: 800;
         }
 
         .project-content p {
             color: #666;
             margin-bottom: 1.5rem;
             flex-grow: 1;
+            line-height: 1.8;
+            font-size: 1.05rem;
         }
 
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.6rem;
             margin-bottom: 1.5rem;
         }
 
         .tech-tag {
             background: #f5f7fa;
             color: #0f3460;
-            padding: 5px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.9rem;
+            font-weight: 700;
         }
 
         .project-link {
             color: #e94560;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.3s ease;
             display: inline-block;
+            font-size: 1.05rem;
         }
 
         .project-link:hover {
@@ -297,10 +321,37 @@
             transform: translateX(5px);
         }
 
+        .code-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #e94560;
+        }
+
+        .code-section h4 {
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .code-block {
+            background: #2d3436;
+            color: #f5f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
         .contact {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #f5f7fa;
-            padding: 80px 2rem;
+            padding: 100px 2rem;
             text-align: center;
             border-radius: 15px;
         }
@@ -308,20 +359,29 @@
         .contact h2 {
             color: #e94560;
             margin-bottom: 2rem;
+            font-size: 2.8rem;
+            font-weight: 800;
+        }
+
+        .contact p {
+            margin-bottom: 2.5rem;
+            font-size: 1.2rem;
+            color: rgba(245, 247, 250, 0.95);
         }
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 35px;
+            margin: 50px 0;
         }
 
         .contact-item {
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
+            padding: 35px;
+            border-radius: 12px;
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
         .contact-item:hover {
@@ -329,32 +389,45 @@
             transform: translateY(-5px);
         }
 
+        .contact-item h3 {
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
         .contact-item a {
             color: #e94560;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.1rem;
+            word-break: break-all;
+        }
+
+        .contact-item a:hover {
+            color: #f5f7fa;
         }
 
         footer {
             background: #1a1a2e;
             color: #f5f7fa;
             text-align: center;
-            padding: 2rem;
-            margin-top: 80px;
+            padding: 2.5rem;
+            margin-top: 100px;
+            font-weight: 600;
         }
 
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
 
             .hero .subtitle {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .nav-links {
-                gap: 1rem;
-                font-size: 0.9rem;
+                gap: 1.5rem;
+                font-size: 0.95rem;
             }
 
             .about-grid {
@@ -367,7 +440,7 @@
             }
 
             .section-title {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .about {
@@ -375,6 +448,10 @@
             }
 
             .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -422,7 +499,7 @@
                             <div class="skill-tag">Swing GUI</div>
                             <div class="skill-tag">Patrones de Diseño</div>
                             <div class="skill-tag">Git / GitHub</div>
-                            <div class="skill-tag">Programación Segura</div>
+                            <div class="skill-tag">Programacion Segura</div>
                         </div>
                     </div>
                 </div>
@@ -433,7 +510,7 @@
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-header">⚔️</div>
+                    <div class="project-header">RPG</div>
                     <div class="project-content">
                         <h3>Simulador RPG de Combate</h3>
                         <p>Sistema de gestión de personajes RPG con cálculo dinámico de daño, atributos y estados. Implementación de polimorfismo y herencia en Java.</p>
@@ -441,13 +518,21 @@
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">OOP</span>
                             <span class="tech-tag">Herencia</span>
+                            <span class="tech-tag">Polimorfismo</span>
                         </div>
-                        <a href="#" class="project-link">Ver detalles →</a>
+                        <div class="code-section">
+                            <h4>Conceptos clave:</h4>
+                            <div class="code-block">- Clases abstractas
+- Interfaces para comportamientos
+- Calculo dinamico de danio
+- Gestion de estados
+- Herencia multinivel</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">📝</div>
+                    <div class="project-header">NOTAS</div>
                     <div class="project-content">
                         <h3>Gestor de Notas Swing</h3>
                         <p>Aplicación de escritorio con interfaz gráfica Swing. Incluye autenticación de usuarios, hash SHA-256 y arquitectura MVC.</p>
@@ -456,21 +541,35 @@
                             <span class="tech-tag">MVC</span>
                             <span class="tech-tag">Seguridad</span>
                         </div>
-                        <a href="#" class="project-link">Ver detalles →</a>
+                        <div class="code-section">
+                            <h4>Características:</h4>
+                            <div class="code-block">- Autenticacion de usuarios
+- Encriptacion SHA-256
+- Patron MVC
+- Interfaz grafica profesional
+- Persistencia de datos</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">🗄️</div>
+                    <div class="project-header">SQL</div>
                     <div class="project-content">
-                        <h3>Base de Datos Clínica</h3>
+                        <h3>Base de Datos Clinica</h3>
                         <p>Diseño y administración de base de datos relacional. Incluye operaciones DML avanzadas, subconsultas y transacciones.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">SQL</span>
                             <span class="tech-tag">Bases de Datos</span>
                             <span class="tech-tag">DML</span>
                         </div>
-                        <a href="#" class="project-link">Ver detalles →</a>
+                        <div class="code-section">
+                            <h4>Operaciones realizadas:</h4>
+                            <div class="code-block">- INSERT, UPDATE, DELETE
+- Subconsultas anidadas
+- Transacciones ACID
+- JOINs complejos
+- Integridad referencial</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -478,20 +577,20 @@
 
         <section id="contact">
             <div class="contact">
-                <h2>¿Listo para colaborar?</h2>
-                <p style="margin-bottom: 2rem; font-size: 1.1rem;">Contáctame para proyectos, oportunidades o simplemente para conversar sobre desarrollo.</p>
+                <h2>Listo para colaborar</h2>
+                <p>Contactame para proyectos, oportunidades o simplemente para conversar sobre desarrollo.</p>
                 <div class="contact-grid">
                     <div class="contact-item">
-                        <h3 style="margin-bottom: 1rem;">Correo</h3>
-                        <a href="mailto:ivan@example.com">ivan.hernandez@example.com</a>
+                        <h3>Correo</h3>
+                        <a href="mailto:ivanhernandezbetancor@gmail.com">ivanhernandezbetancor@gmail.com</a>
                     </div>
                     <div class="contact-item">
-                        <h3 style="margin-bottom: 1rem;">LinkedIn</h3>
-                        <a href="#">linkedin.com/in/ivan-hernandez</a>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/ivanhernandez08?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">linkedin.com/in/ivanhernandez08</a>
                     </div>
                     <div class="contact-item">
-                        <h3 style="margin-bottom: 1rem;">GitHub</h3>
-                        <a href="#">github.com/ivan-hernandez</a>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/ivanhernandezbetancor" target="_blank">github.com/ivanhernandezbetancor</a>
                     </div>
                 </div>
             </div>
@@ -499,7 +598,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Iván Hernández Betancor. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Ivan Hernandez Betancor. Todos los derechos reservados.</p>
     </footer>
 
     <script>
